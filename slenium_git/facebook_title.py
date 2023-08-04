@@ -11,6 +11,8 @@ driver=webdriver.Firefox()
 driver.get("https://www.facebook.com/login/")
 title=driver.title
 print(driver.title)
+print("new added for git")
+
 assert title== "Log in to Facebook"
 
 driver.find_element(By.XPATH, "//input[@id='email']").send_keys("123")
